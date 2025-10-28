@@ -67,6 +67,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 let answersDisabled = false;
 
+// initialize total questions and max score
 totalQuestionsSpan.textContent = quizQuestions.length;
 maxScoreSpan.textContent = quizQuestions.length;
 
@@ -101,7 +102,6 @@ function showQuestion() {
   // todo: explain this in second
   answersContainer.innerHTML = "";
 
-
   currentQuestion.answers.forEach((answer) => {
     const button = document.createElement("button");
     button.textContent = answer.text;
@@ -128,7 +128,7 @@ function selectAnswer(event) {
   Array.from(answersContainer.children).forEach((button) => {
     if (button.dataset.correct === "true") {
       button.classList.add("correct");
-    } else if (button === selectedButton){
+    } else if (button === selectedButton) {
       button.classList.add("incorrect");
     }
   });
@@ -146,7 +146,7 @@ function selectAnswer(event) {
     } else {
       showResult();
     }
-  }, 1000);
+  }, 500);
 }
 
 function showResult() {
@@ -168,15 +168,6 @@ function showResult() {
     resultMessage.textContent = "Keep studying! You'll get better!";
   }
 }
-//   finalScoreSpan.textContent = score;
-//   const percentage = (score / quizQuestions.length) * 100;
-//   if (percentage >= 80) {
-//     resultMessage.textContent = "Excellent work!";
-//   } else if (percentage >= 50) {
-//     resultMessage.textContent = "Good job!";
-//   } else {
-//     resultMessage.textContent = "Better luck next time!";
-//   }
 
 function restartQuiz() {
   console.log("quiz re-starter");
