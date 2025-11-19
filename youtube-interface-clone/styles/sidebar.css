@@ -1,0 +1,11 @@
+.side-bar {
+  /* display: inline; */
+  background-color: rgb(255, 255, 255);
+  /* height: 600px; */
+  width: 72px;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  bottom: 0;
+  
+}

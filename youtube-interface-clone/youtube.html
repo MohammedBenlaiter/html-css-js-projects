@@ -4,41 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    /> -->
-
-    <link rel="preconnect" href="https://fonts. googleapis. com" />
-
-    <link rel="preconnect" href="https://fonts. gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;7008display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="youtube.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
   </head>
 
   <body>
-    <input class="search-bar" type="text" placeholder="Search" />
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="" />
+        <img class="youtube-logo" src="icons/youtube-logo.svg" alt="" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" alt="" />
+        </button>
+        <button class="voice-search-button">
+          <img
+            class="voice-search-icon"
+            src="icons/voice-search-icon.svg"
+            alt=""
+          />
+        </button>
+      </div>
+      <div class="right-section">
+        <img class="upload-icon" src="icons/upload.svg" alt="" />
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="" />
+        <img class="notifications-icon" src="icons/notifications.svg" alt="" />
+        <img
+          class="current-user-picture"
+          src="images/channels4_profile.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="side-bar">sidebar</div>
 
     <div class="video-grid">
       <div class="video-preview">
@@ -48,6 +51,7 @@
             src="https://i.ytimg.com/vi/ozRsQQ55WPk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCGFKXWa0QevY-JW-tLBEfmpy_haQ"
             alt=""
           />
+          <div class="video-time">20:05</div>
         </div>
         <div class="video-preview-grid">
           <div class="channel-picture">
@@ -75,6 +79,7 @@
             src="https://i.ytimg.com/vi/W4fxOLA-vxw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBS1SiW5pAnOZwm8eDPJlXa_Tzsyg"
             alt=""
           />
+          <div class="video-time">3:22</div>
         </div>
         <div class="video-preview-grid">
           <div class="channel-picture">
@@ -101,6 +106,7 @@
             src="https://i.ytimg.com/vi/9KHVshD5lFc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7x3FWmX4PnIR41ucpwY7hFCI33A"
             alt=""
           />
+          <div class="video-time">20:14</div>
         </div>
         <div class="video-preview-grid">
           <div class="channel-picture">
@@ -125,6 +131,7 @@
             src="https://i.ytimg.com/vi/76dhtgZt38A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAleEeRuFBy4cgJNHFUFfnku1fTpQ"
             alt=""
           />
+          <div class="video-time">50:59</div>
         </div>
         <div class="video-preview-grid">
           <div class="channel-picture">
@@ -149,6 +156,7 @@
             src="https://i.ytimg.com/vi/Js0DQsziy6k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB3X2PgxrzR8YLd6OGdaYTYcpLDcg"
             alt=""
           />
+          <div class="video-time">5:50</div>
         </div>
         <div class="video-preview-grid">
           <div class="channel-picture">
@@ -175,6 +183,7 @@
             src="https://i.ytimg.com/vi/zDyhGPH2uvo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDfs58yKWeGZBBf5rQd6K8vm1ztXg"
             alt=""
           />
+          <div class="video-time">13:45</div>
         </div>
         <div class="video-preview-grid">
           <div class="channel-picture">
@@ -186,8 +195,7 @@
           </div>
           <div class="video-info">
             <p class="video-title">
-              apartment tour dtla 2026 (downtown los angeles loft) 13 minutes,
-              45 seconds
+              apartment tour dtla 2026 (downtown los angeles loft)
             </p>
             <p class="video-author">james vinh scholz</p>
             <p class="video-stats">93K views · 3 weeks ago</p>
@@ -202,6 +210,7 @@
             src="https://i.ytimg.com/vi/j7CDb610Bg0/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhQIGUoMzAP&rs=AOn4CLDmp2AKNJOzDj-aa9LmuOvGgEKWJw"
             alt=""
           />
+          <div class="video-time">4:32</div>
         </div>
         <div class="video-preview-grid">
           <div class="channel-picture">
@@ -226,6 +235,7 @@
             src="https://i.ytimg.com/vi/nOCPpT-Sn0A/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCYSjDhnMm2LbbfCcbWMzgpYQVTFg"
             alt=""
           />
+          <div class="video-time">17:38</div>
         </div>
         <div class="video-preview-grid">
           <div class="channel-picture">
@@ -250,6 +260,7 @@
             src="https://i.ytimg.com/vi/jNQXAC9IVRw/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgKAAvABigIMCAAQARhVIFkoZTAP&rs=AOn4CLDkGJrAGBspJ5G6u9b7tutsHbloEg"
             alt=""
           />
+          <div class="video-time">0:19</div>
         </div>
         <div class="video-preview-grid">
           <div class="channel-picture">
@@ -274,6 +285,7 @@
             src="https://i.ytimg.com/vi/1Baon3thiqU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAcq66F4dRAcm9bYkrYqz42oa-COA"
             alt=""
           />
+          <div class="video-time">14:16</div>
         </div>
         <div class="video-preview-grid">
           <div class="channel-picture">
@@ -300,6 +312,7 @@
             src="https://i.ytimg.com/vi/XBQBKseozuY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBheIdL08ztpqbmC8y6IHSbZV86vQ"
             alt=""
           />
+          <div class="video-time">15:54</div>
         </div>
         <div class="video-preview-grid">
           <div class="channel-picture">
@@ -326,6 +339,7 @@
             src="https://i.ytimg.com/vi/KMI83IF1m6Q/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA6azmhHgLlIhtrcaoMKJLEJwd9YQ"
             alt=""
           />
+          <div class="video-time">1:07:58</div>
         </div>
         <div class="video-preview-grid">
           <div class="channel-picture">
