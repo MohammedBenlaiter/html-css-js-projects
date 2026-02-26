@@ -2,6 +2,8 @@ import { cart, removeFromCart } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { formatCurrency } from "./utils/money.js";
 import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
+import { deliveryOptions } from "../data/deliveryOptions.js";
+
 const today = dayjs();
 const deliveryDate = today.add(7, "days");
 console.log(deliveryDate.format("dddd, MMMM  D"));
@@ -68,6 +70,27 @@ cart.forEach((cartItem) => {
           </div>
     `;
 });
+
+function deliveryOptionsHTML() {
+  let html = "";
+  deliveryOptions.forEach((deliveryOption) => {
+    const today = dayjs();
+    const deliveryDate = today.add(deliveryOption.deliveryDate, "days");
+    const dateString = deliveryDate.format("dddd, MMMM D");
+    const priceString =
+      deliveryOption.priceCents === 0
+        ? "FREE"
+        : `$${formatCurrency(deliveryOption.priceCents)} -``
+                <div class="delivery-option">
+                  <input type="radio" checked="" class="delivery-option-input" name="delivery-option-${matchingProduct.id}">
+                  <div>
+                    <div class="delivery-option-date">${dateString}</div>
+                    <div class="delivery-option-price">${priceString}</div>
+                  </div>
+                </div>
+    `;
+  });
+}
 
 document.querySelector(".js-order-summary").innerHTML = cartSummaryHTML;
 
